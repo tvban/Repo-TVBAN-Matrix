@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.tvban" name="TVBAN [COLOR dodgerblue]WIZARD[/COLOR]" version="6.1.21" provider-name="tvban">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TVBAN [COLOR dodgerblue]WIZARD[/COLOR]</summary>
+    <description lang="en">BUILD aura-tvban para Kodi 18
+Telegram: [COLOR lime]t.me/beelinkking[/COLOR]</description>
+<news>- BUILD [COLOR limegreen]aura-tvban[/COLOR]
+06/01/21
+- Corregido Notify
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+07/11/2020
+- Añadido Elementum All-One
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- Mejoras en buffer.
+- Cambio color de springgreen a dodgerblue.
+- Incluido Forzar Cierre en menú de apagado.
+- Test de Velolcidad.
+- Editado texto parche.
+- Corregido textos.
+ </news>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Vilhao.Matrix"
+       name="[COLOR blue]V[/COLOR][COLOR yellow]i[/COLOR][COLOR blue]l[/COLOR][COLOR yellow]h[/COLOR][COLOR blue]a[/COLOR][COLOR yellow]o[/COLOR]"
+       version="1.1"
+       provider-name="VILHAO">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+	<import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>[COLOR yellow]O[/COLOR] [COLOR blue]melhor[/COLOR] [COLOR yellow]para[/COLOR] [COLOR blue]ver[/COLOR] [COLOR yellow]na[/COLOR] [COLOR blue]sua[/COLOR] [COLOR yellow]TV[/COLOR][COLOR blue]!!![/COLOR]</summary>
+    <description>
+	[B][COLOR yellow]- Add-on oficial do Vilhao[/COLOR][/B]
+
+[B][COLOR yellow]- Vilhao, Para uso de todos.[/COLOR][/B]
+
+[B][COLOR yellow]- O Add-on Vilhao é de uso gratuito!![/COLOR][/B]
+
+[B][COLOR red]- Proibido a venda deste add-on[/COLOR][/B]
+	</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.gtking" name="[COLOR limegreen][B]Repo[/B][/COLOR]GTKing" version="2.0" provider-name="gtkingbuild">
+    <extension point="xbmc.addon.repository" name="[COLOR limegreen][B]Repo[/B][/COLOR]GTKing">
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/matrix/zips/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Repo [COLOR dodgerblue]PRUEBA[/COLOR]</summary>
+        <description>Repositorio de addons [COLOR dodgerblue]GTKING[/COLOR].</description>
+        <disclaimer>Esta Repo recoge los addons que hay por la Red.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+		<source>https://github.com/gtkingbuild/Repo-GTKing/</source>
+    </extension>
+</addon>
+
+<addon id="repository.repotvban" name="[B]TVBAN [COLOR dodgerblue]Repo[/COLOR][/B]" version="7.1.21" provider-name="tvban">
+       <extension point="xbmc.addon.repository" name="TVBAN Repo">
+              <info>https://raw.githubusercontent.com/tvban/TVBAN-Repo/master/addons.xml</info>
+              <checksum>https://raw.githubusercontent.com/tvban/TVBAN-Repo/master/addons.xml.md5</checksum>
+              <datadir zip="true">https://raw.githubusercontent.com/tvban/TVBAN-Repo/master/</datadir>
+       </extension>
+       <extension point="xbmc.addon.metadata">
+              <summary>TVBAN [COLOR dodgerblue]Repo[/COLOR]</summary>
+              <description lang="es">Repositorio de addons [COLOR dodgerblue]TVBAN[/COLOR]</description>
+              <disclaimer></disclaimer>
+              <platform>all</platform>
+       </extension>
+</addon>
+
+<addon id="script.luar"
+  version="0.8.1"
+  name="Luar"
+  provider-name="The Dreamers">
+  <requires>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="resource.language.es_es"/>
+    <import addon="script.module.pycryptodome" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Luar Repo">
+    <info>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="es">Script instalador de complementos para Kodi.</summary>
+    <description lang="es">Selecciona, instala y disfruta.</description>
+    <disclaimer lang="es"></disclaimer>
+    <assets>
+      <icon>icon.gif</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot000.jpg</screenshot>
+      <screenshot>resources/screenshot001.jpg</screenshot>
+      <screenshot>resources/screenshot002.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="skin.auramodtvban" version="1.8.20" name="AuraMod [COLOR limegreen]TVBAN[/COLOR]" provider-name="auramod,tvban">
+    <requires>
+        <import addon="xbmc.gui" version="5.14.0"/>
+        <import addon="repository.marcelveldt" version="1.0.2"/>
+        <import addon="repository.jurialmunkey" version="1.2"/>
+        <import addon="script.skin.helper.service" version="1.1.24"/>
+        <import addon="script.skin.helper.widgets" version="1.0.0"/>
+        <import addon="script.skinshortcuts" version="1.0.20"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+        <import addon="resource.images.studios.white" version="0.0.10"/>
+        <import addon="resource.images.studios.coloured" version="0.0.18"/>
+        <import addon="resource.images.moviegenreicons.transparent" version="0.0.6"/>
+    </requires>
+    <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+         <summary lang="en">Mod TVBAN de AuraMod, Minimalista, Personalizable, Multiple Widgets.</summary>
+        <description lang="es">Mod TVBAN de AuraMod. Esta versión de Aura está basada para todos los usuarios. Gracias al grupo de [COLOR green]BEELINK/GT-KING / GTKING PRO/GT1[/COLOR]</description>
+		<news>Nuevos cambios:
+		- Skin basado en AuraMod [COLOR limegreen]TVBAN[/COLOR]
+		</news>
+		<platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <forum/>
+        <source/>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+            <screenshot>resources/screenshot-04.jpg</screenshot>
+            <screenshot>resources/screenshot-05.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+</addons>
