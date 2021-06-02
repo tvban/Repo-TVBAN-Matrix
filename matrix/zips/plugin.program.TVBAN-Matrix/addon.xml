@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="3.0" provider-name="Josa, TVBAN TEAM">
+<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="3.0.4" provider-name="Josa, TVBAN TEAM">
 	<requires>
     	<import addon="xbmc.python" version="3.0.0"/>
     	<import addon="script.module.requests" />
@@ -21,7 +21,7 @@
 [B]• Telegram:[/B] [COLOR lime]t.me/beelinkking[/COLOR]</description>
 		<platform>all</platform>
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/gtkingbuild/Repo-GTKing/plugin.program.GTKing-Matrix/</source>
+        <source>https://github.com/tvban/Repo-TVBAN-Matrix/tree/master/matrix/plugin.program.TVBAN-Matrix</source>
 		<news>
 • plugin.program [B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]
 
