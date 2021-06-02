@@ -17,7 +17,7 @@ ADDONTITLE = '[COLOR azure][B]GTKing[/B][/COLOR] [COLOR lime][B]MATRIX[/B][/COLO
 BUILDERNAME = 'Josa & DavidZgz'
 EXCLUDES = [ADDON_ID, 'repository.tvbanMatrix']
 # Text File with build info in it.
-BUILDFILE = 'https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/wizardfiles/builds.txt'
+BUILDFILE = 'https://github.com/tvban/Repo-TVBAN-Matrix/master/wizardfiles/builds.txt'
 # How often you would like it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK = 0
@@ -29,7 +29,7 @@ YOUTUBEFILE = 'http://'
 # Text File for addon installer.  Leave as 'http://' to ignore
 ADDONFILE = 'http://'
 # Text File for advanced settings.  Leave as 'http://' to ignore
-ADVANCEDFILE = 'https://raw.githubusercontent.com/gtkingbuild/gtkingbuild.github.io/master/wizard/xml/Advanced.json'
+ADVANCEDFILE = 'https://github.com/tvban/tvban.github.io/blob/master/wizard/Advanced.json'
 #########################################################
 
 #########################################################
@@ -94,7 +94,7 @@ CONTACTFANART = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE = 'Yes'
 # Url to wizard version
-WIZARDFILE = 'https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/wizardfiles/builds.txt' 
+WIZARDFILE = 'https://github.com/tvban/Repo-TVBAN-Matrix/master/wizardfiles/builds.txt' 
 #########################################################
 
 #########################################################
