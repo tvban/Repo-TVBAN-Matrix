@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="3.0" provider-name="Josa, TVBAN TEAM">
+<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="4.0" provider-name="Josa, TVBAN TEAM">
+	<requires>
+    	<import addon="xbmc.python" version="3.0.0"/>
+    	<import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="default.py">
+    	<provides>executable</provides>
+    </extension>
+
+	<extension point="xbmc.service" library="startup.py" start="startup" />
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="es">[COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR] tu Wizard para KODI 19.x !!</summary>
+
+    	<description lang="es">
+[B]• Testers:[/B]     [COLOR dodgerblue]Josa,Rojo,GTKing Team[/COLOR]
+[B]• Telegram:[/B] [COLOR lime]t.me/beelinkking[/COLOR]</description>
+		<platform>all</platform>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/gtkingbuild/Repo-GTKing/plugin.program.GTKing-Matrix/</source>
+		<news>
+• plugin.program [B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]
+
+• 27/06/2021
+- Instalador actualizado a la versión 4.0
+- Pide el Parche despúes de instalar la Build.
+
+• 05/03/2021
+- Instalador actualizado a la versión 3.0.4
+- Inciada la compatibilidad con Kodi 19.0 Matrix</news>
+	<assets>
+	    <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+	</assets>
+    </extension>
+</addon>
+
+<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="3.0.4" provider-name="Josa, TVBAN TEAM">
 	<requires>
     	<import addon="xbmc.python" version="3.0.0"/>
     	<import addon="script.module.requests" />
@@ -22,7 +62,7 @@
 [B]• Telegram:[/B] [COLOR lime]t.me/beelinkking[/COLOR]</description>
 		<platform>all</platform>
 		<reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://github.com/tvban/Repo-TVBAN-Matrix/tree/master/matrix/plugin.program.TVBAN-Matrix</source>
+        <source>https://github.com/tvban/Repo-TVBAN-Matrix/blob/master/matrix/plugin.program.TVBAN-Matrix/</source>
 		<news>
 • plugin.program [B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]
 
@@ -135,14 +175,14 @@
 <addon id="repository.TVBan-Matrix" name="[COLOR steelblue][B]Repo[/B][/COLOR] [COLOR azure][B]TVBan[/B] [/COLOR][COLOR limegreen][B]MATRIX[/B][/COLOR]" version="3.0.3" provider-name="TVBAN">
     <extension point="xbmc.addon.repository" name="[COLOR dodgerblue][B]Repo[/B][/COLOR] Prueba [COLOR limegreen]MATRIX[/COLOR]">
         <dir minversion="18.0" maxversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/leia/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/leia/zips/addons.xml.md5</checksum>
+            <info compressed="false">https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/leia/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/leia/zips/</datadir>
         </dir>
         <dir minversion="18.9.0">
-            <info compressed="false">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/matrix/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrixa/master/matrix/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/tvban/Repo-TVBAN-Matrix/master/matrix/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/gtkingbuild/Repo-Prueba/master/matrix/zips/</datadir>
         </dir>
         <dir minversion="18.9.0">
             <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
@@ -160,7 +200,7 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-		<source>https://github.com/tvban/Repo-TVBAN-Matrix/</source>
+		<source>https://github.com/gtkingbuild/Repo-GTKing/</source>
     </extension>
 </addon>
 
