@@ -43,21 +43,21 @@ def binaries():
     if os.path.exists(binarytxt):
         binaryids = tools.read_from_file(binarytxt).split(',')
 
-        logging.log("[Binario Detección] Reinstalación de Add-ons Binarios Elegibles")
+        logging.log("[Binario Detección] Reinstalación de Addons Binarios Elegibles")
         dialog.ok(CONFIG.ADDONTITLE,
-                  '[COLOR {0}]La compilación restaurada contiene add-ons específicos de la plataforma, que ahora serán '
-                  'instalados automáticamente. Es posible que aparezcan varios cuadros de diálogo durante este proceso. Cancelarlos '
+                  '[COLOR {0}]La compilación restaurada contiene addons específicos de la plataforma, que ahora serán '
+                  'instalado automáticamente. Es posible que aparezcan varios cuadros de diálogo durante este proceso. Cancelarlos '
                   'puede hacer que la compilación restaurada funcione incorrectamente.[/COLOR]'.format(
                       CONFIG.COLOR2))
     else:
-        logging.log("[Detección de Binario] No hay Addons Binarios Elegibles para Reinstalar")
+        logging.log("[Binario Detección] No hay Addons Binarios Elegibles para Reinstalar")
         return True
 
     success = []
     fail = []
 
     if len(binaryids) == 0:
-        logging.log('No se seleccionaron add-ons para la instalación.')
+        logging.log('No se seleccionaron addons para la instalación.')
         return
 
     from resources.libs.gui import addon_menu
@@ -116,7 +116,7 @@ class Restore:
                 self.progress_dialog.update(0, '[COLOR {0}]No se puede leer el archivo zip desde la ubicación actual.'.format(CONFIG.COLOR2) + '\n' + 'Copiando archivo a paquetes')
                 xbmcvfs.copy(file, packages)
                 file = xbmcvfs.translatePath(packages)
-                self.progress_dialog.update(0, '\n' + 'Copiar el archivo a paquetes: Completo')
+                self.progress_dialog.update(0, '\n' + 'Copiar archivo a paquetes: Completo')
                 zipfile.ZipFile(file, 'r', allowZip64=True)
         else:
             from resources.libs.downloader import Downloader
@@ -141,12 +141,12 @@ class Restore:
         db.force_check_updates(over=True)
 
         tools.kill_kodi(
-            msg='[COLOR {0}]Para guardar los cambios, es necesario Forzar el Cierre de Kodi. Te gustaria continuar?[/COLOR]'.format(
+            msg='[COLOR {0}]Para guardar los cambios, es necesario Forzar el Cierre de Kodi. Te gustaría continuar?[/COLOR]'.format(
                 CONFIG.COLOR2))
 
     def _view_errors(self, percent, errors, error, file):
         if int(errors) >= 1:
-            if self.dialog.yesno(CONFIG.ADDONTITLE, '[COLOR {0}][COLOR {1}]{2}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1, file) + '\n' + 'Completado: [COLOR {0}]{1}{2}[/COLOR] [Errores: [COLOR {3}]{4}[/COLOR]]'.format(CONFIG.COLOR1, percent, '%',CONFIG.COLOR1, errors) + '\n' + 'Le gustaria ver los errores[/COLOR]',
+            if self.dialog.yesno(CONFIG.ADDONTITLE, '[COLOR {0}][COLOR {1}]{2}[/COLOR]'.format(CONFIG.COLOR2, CONFIG.COLOR1, file) + '\n' + 'Completado: [COLOR {0}]{1}{2}[/COLOR] [Errores: [COLOR {3}]{4}[/COLOR]]'.format(CONFIG.COLOR1, percent, '%',CONFIG.COLOR1, errors) + '\n' + 'Le gustaría ver los errores[/COLOR]',
                                  nolabel='[B][COLOR red]No, Gracias[/COLOR][/B]',
                                  yeslabel='[B][COLOR cyan]Ver Errores[/COLOR][/B]'):
 

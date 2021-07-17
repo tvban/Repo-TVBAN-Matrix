@@ -18,8 +18,8 @@
 		<summary lang="es">[COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR] tu Wizard para KODI 19.x !!</summary>
 
     	<description lang="es">
-[B]• Developers:[/B]     [COLOR gold]JoseAnd[/COLOR]
-[B]• Testers:[/B]            [COLOR dodgerblue]JoseAnd,Rojo[/COLOR]
+[B]• Developers:[/B]      [COLOR gold]JoseAnd[/COLOR]
+[B]• Testers:[/B]             [COLOR dodgerblue]JoseAnd,Rojo[/COLOR]
 [B]• Telegram:[/B]         [COLOR lime]t.me/beelinkking[/COLOR]</description>
 		<platform>all</platform>
 		<reuselanguageinvoker>false</reuselanguageinvoker>
@@ -110,6 +110,51 @@
         <source>https://github.com/tvban/Repo-TVBAN-Matrix/blob/master/matrix/plugin.program.TVBAN-Matrix/</source>
 		<news>
 • plugin.program [B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]
+
+• 05/03/2021
+- Instalador actualizado a la versión 3.0.4
+- Inciada la compatibilidad con Kodi 19.0 Matrix</news>
+	<assets>
+	    <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+	</assets>
+    </extension>
+</addon>
+
+<addon id="plugin.program.TVBAN-Matrix" name="[B][COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR][/B]" version="7.0" provider-name="[B][COLOR azure]TVBAN TEAM[/COLOR][/B]">
+	<requires>
+    	<import addon="xbmc.python" version="3.0.0"/>
+    	<import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+	</requires>
+
+	<extension point="xbmc.python.pluginsource" library="default.py">
+    	<provides>executable</provides>
+    </extension>
+
+	<extension point="xbmc.service" library="startup.py" start="startup" />
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="es">[COLOR azure]TVBAN[/COLOR] [COLOR lime]MATRIX[/COLOR] tu Wizard para KODI 19.x !!</summary>
+
+    	<description lang="es">
+[B]• Developers:[/B]     [COLOR gold]JoseAnd[/COLOR]
+[B]• Testers:[/B]            [COLOR dodgerblue]JoseAnd,Rojo[/COLOR]
+[B]• Telegram:[/B]         [COLOR lime]t.me/beelinkking[/COLOR]</description>
+		<platform>all</platform>
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/gtkingbuild/Repo-GTKing/plugin.program.GTKing-Matrix/</source>
+		<news>
+• plugin.program [COLOR azure][B]GTKing[/B][/COLOR] [COLOR lime][B]MATRIX[/B][/COLOR]
+
+• 10/07/2021
+- Instalador renombrado a la versión 7.0
+- Añadidas notificaciones para actualizar el parche de la Build.
+- Corregido el Parche despúes de instalar la Build.
+
+• 27/06/2021
+- Pide el Parche despúes de instalar la Build.
 
 • 05/03/2021
 - Instalador actualizado a la versión 3.0.4
